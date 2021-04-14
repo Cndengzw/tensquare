@@ -58,9 +58,9 @@ public class IdWorker {
     }
     /**
      * @param workerId
-     *            工作机器ID
+     *            工作机器ID（给生产设备编号）
      * @param datacenterId
-     *            序列号
+     *            序列号（每毫秒每台设备可以生成的序列号）
      */
     public IdWorker(long workerId, long datacenterId) {
         if (workerId > maxWorkerId || workerId < 0) {

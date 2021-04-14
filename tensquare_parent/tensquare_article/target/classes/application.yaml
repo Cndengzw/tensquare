@@ -1,0 +1,28 @@
+server:
+  port: 9004
+
+spring:
+  application:
+    name: tensquare-article
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://faker2020.top:3305/tensquare_article?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+
+# Mybatis-Plus 配置
+mybatis-plus:
+  #  mapper-locations: classpath:/mapper/*Mapper.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  type-aliases-package: com.tensquare.article
+  global-config:
+    id-type: 1 #0: 数据库ID自增， 1：用户输入ID
+    db-column-underline: false # 表名、字段名、是否使用下划线命名
+    refresh-mapper: true # 方便调试
+    configuration:
+      map-underscore-to-camel-case: true
+      cache-enabled: true #配置的缓存的全局开关
+      lazyLoadingEnabled: true #延时加载的开关
+      multipleResultSetsEnabled: true #开启延时加载，否则按需加载属性
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql语句,调试用
+
