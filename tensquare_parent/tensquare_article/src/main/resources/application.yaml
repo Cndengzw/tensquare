@@ -9,6 +9,14 @@ spring:
     url: jdbc:mysql://faker2020.top:3305/tensquare_article?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: root
+  data:
+    mongodb:
+      uri: mongodb://comment:comment@139.159.221.69:27015/comment?authSource=admin&authMechanism=SCRAM-SHA-256
+#      host: 139.159.221.69
+#      port: 27015
+#      database: comment
+#      username: comment
+#      password: comment
 
 # Mybatis-Plus 配置
 mybatis-plus:
@@ -25,4 +33,6 @@ mybatis-plus:
       lazyLoadingEnabled: true #延时加载的开关
       multipleResultSetsEnabled: true #开启延时加载，否则按需加载属性
       log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql语句,调试用
+
+
 

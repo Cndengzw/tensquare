@@ -20,9 +20,9 @@ public class ArticleApplication {
     }
 
     // bean注解需要有 @Configuration 注解，这里@SpringBootApplication里面的@SpringBootConfiguration含有该注解
-    @Bean
-    public IdWorker createIdWorker() {
-        return new IdWorker(1, 1);  // 1, 1 是自己指定的，具体可以看参数介绍
-    }
+//    @Bean
+//    public IdWorker createIdWorker() {
+//        return new IdWorker(1, 1);  // 1, 1 是自己指定的，具体可以看参数介绍
+//    }
 
 }
