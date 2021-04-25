@@ -11,12 +11,16 @@ spring:
     password: root
   data:
     mongodb:
-      uri: mongodb://comment:comment@139.159.221.69:27015/comment?authSource=admin&authMechanism=SCRAM-SHA-256
+      uri: mongodb://comment:comment@faker2020.top:27015/comment?authSource=admin&authMechanism=SCRAM-SHA-256
 #      host: 139.159.221.69
 #      port: 27015
 #      database: comment
 #      username: comment
 #      password: comment
+  redis:
+    port: 6378
+    host: faker2020.top
+    password: root
 
 # Mybatis-Plus 配置
 mybatis-plus:
